@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body background="./assets/background.avif">
+   
+    <div class="container">
+        <div class="header">
+            <div class="searchbox">
+              <input type="text" placeholder="Enter your pasandita destination" class="input-box">  
+              <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>    
+        </div>
+
+
+        <div class="location-not-found">
+            <h1>Sorry,Your pasandita location is NOT found!!</h1>
+            <img src="/assets/404.png" alt="404 error">
+        </div>
+        <div class="weather-body">
+            <img src="./assets/cloud.png" alt="weather Image" class="weather-img">
+            <div class="weather-box">
+               <p class="temperature">0 <sup>°C</sup></p>
+               <p class="description">LIGHT RAIN</p>
+            </div>
+            <div class="weather_detail">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="Wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12Km/H</span>
+                        <p>Wind speed</p>
+                    </div>
+                </div>                                  
+            </div>
+        </div>
+    </div>
+    <script src="scrip.js"></script>
+
+    <script src="https://kit.fontawesome.com/53703a9b51.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
